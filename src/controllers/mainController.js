@@ -3,7 +3,7 @@ const controller = {
         res.render('index');
     },
     userAccess: (req, res) => {
-        res.send('ok')
+        res.render('dashboard', { user: req.user })
     }
 }
 
